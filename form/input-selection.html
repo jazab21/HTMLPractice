@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <!--
+        radio -> permite seleccionar una única opción de una lista de opciones relacionadas.
+
+        checkbox -> permite seleccionar varias opciones de una lista de opciones relacionadas.
+
+        select -> crea una lista de opciones donde podemos seleccionar una o varias opciones.
+
+        Cada opción irña dentro de una etiqueta <option></option>. Si tenemos muchas podemos ordenarlas por categorías con la etiqueta <optgroup> y el atributo label para nombrar la categoría en cuestión.
+    -->
+<body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <input type="list" list="pets">
+        <datalist id="pets">
+            <option value="perro"></option>
+            <option value="gato"></option>
+            <option value="conejo"></option>
+            <option value="caballo"></option>
+            <option value="serpiente"></option>
+            <option value="iguana"></option>
+            <option value="tortuga"></option>
+            <option value="canario"></option>
+            <option value="hormiga"></option>
+        </datalist>
+        <!--<select name="mascotas">
+            <optgroup label="Mamíferos">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Conejo</option>
+            <option value="caballo">Caballo</option>
+            </optgroup>
+            <optgroup label="Reptiles">
+            <option value="serpiente">Serpiente</option>
+            <option value="iguana">Iguana</option>
+            <option value="tortuga">Tortuga</option>
+            </optgroup>
+            <optgroup label="Otros">
+            <option value="canario">Canario</option>
+            <option value="hormiga">Hormiga</option>
+            </optgroup>
+        </select>-->
+        <!--<h2>Género</h2>
+        <label for="g1">Masculino</label>
+        <input type="radio" id="g1" name="gender" value="man">
+        <label for="g2">Femenino</label>
+        <input type="radio" id="g2" name="gender" value="woman">
+        <label for="g3">Desconocido</label>        
+        <input type="radio" id="g3" name="gender" value="unknown">-->
+        <!--<h2>Lenguajes que conoces</h2>
+        <input type="checkbox" name="languages" id="l1" value="html" checked>
+        <label for="l1">HTML</label>
+        <br>
+        <input type="checkbox" name="languages" id="l2" value="css">
+        <label for="l2">CSS</label>
+        <br>
+        <input type="checkbox" name="languages" id="l3" value="javascript">
+        <label for="l3">JavaScript</label>-->
+
+    </form>
+</body>
+</html>

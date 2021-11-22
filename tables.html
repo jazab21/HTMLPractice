@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        col:nth-child(1) {
+            background-color: rgb(45, 110, 163);
+        }
+        col:nth-child(2) {
+            background-color: rgb(156, 86, 92);
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Las tablas en HTML sirven para mostrar contenido tabulado
+
+        La estructura básica de una tabla se compone de:
+        
+            table -> etiqueta que encierra la tabla
+
+            tr -> table row, etiqueta que construye una fila
+
+            td -> table data, etiqueta que construye una celda
+        
+        Truco: el número de celdas dentro de un td establecerá el número de columnas
+
+        Los títulos de las tablas se establecen con la etiqueta caption, es opcional y se coloca luego de la etiqueta table.
+
+        Las cabeceras de las tablas se establecen con la etiqueta thead. Dentro tendremos una etiqueta tr normal, pero en el caso de las celdas estableceremos con la etiqueta th en lugar de td.
+
+        El contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla. Solo obligatorio si hay thead.
+
+        De forma opcional podemos colocar un tfoot a la tabla para establecer un pie de tabla (suma de cantidades o total).
+
+        Para hacer que las celdas ocupen más de una fila o de una columna tenemos 2 atributos:
+            rowspan: cambiar filas ocupadas (1 por defecto)
+            colspan: cambiar columnas ocupadas (1 por defecto)
+
+        Cuando necesitamos seleccionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.
+
+        Si necesitamos que una etiqueta col agrupe más que una columna, tenemos el atributo span, que funciona exactamente igual a rowspan y colspan.
+    -->
+    <h1>Tables</h1>
+
+    <table><caption>CLASS SCHEDULE</caption>
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>T</th>
+                <th>F</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Math</td>
+            <td>Math</td>
+            <td>History</td>
+            <td>Math</td>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:25</td>
+            <td>Literature</td>
+            <td>Literature</td>
+            <td>Math</td>
+            <td>Biology</td>
+            <td>Literature</td>
+        </tr>
+        <tr>
+            <td>10:25 - 11:20</td>
+            <td>Physical Education</td>
+            <td>Biology</td>
+            <td>Literature</td>
+            <td>Literature</td>
+            <td>Physical Education</td>
+        </tr>
+        <tr>
+            <td>11:20 - 11:45</td>
+            <td colspan="5">Recess</td>
+        </tr>
+        <tr>
+            <td>11:45 - 12:40</td>
+            <td>Spanish</td>
+            <td>History</td>
+            <td>Spanish</td>
+            <td>Geography</td>
+            <td>Spanish</td>
+        </tr>
+        <tr>
+            <td>12:40 - 13:35</td>
+            <td rowspan="2">Information Technology</td>
+            <td>Physical Education</td>
+            <td>Art</td>
+            <td>Biology</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td>13:35 - 14:30</td>
+            <td>Geography</td>
+            <td>Information Technology</td>
+            <td>Physics</td>
+            <td>Physics</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total Subjects</td>
+                <td>11</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

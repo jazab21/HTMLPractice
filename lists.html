@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Las listas en HTML sirven para listar contenido. En función del tipo de contenido de nuestra lista tenemos tres tipos de listas:
+            ul -> unordered list: se utiliza cuando el orden de los elementos no influye (lista de compra)
+
+            ol -> ordered list: se utiliza cuando el orden de los elementos es importante (top 10)
+
+        Cada elemento de estas listas (ul y ol) se representa con la etiqueta <li>
+
+            dl -> definition list: se utilizan para hacer lista de definiciones (diccionario)
+
+        Cada elemento de una listas de definición lleva 2 etiquetas:
+            dt -> definition term: término que definiremos
+            dd -> definition description: descripción del termino
+
+        Atributos de listas:
+
+            ol:
+                type: estilo de la numeración (1, A, a I, i)
+                start: (número) inicio de la secuencia
+
+            ul:
+                type: estilo de los items (disc, square, circle)
+
+    -->
+    <h1>Listas</h1>
+    <nav>
+        <ul>
+            <li><a href="#post1">Post 1</a></li>
+            <li><a href="#post2">Post 2</a></li>
+            <li><a href="#post3">Post 3</a></li>
+            <li><a href="#post4">Post 4</a></li>
+        </ul>
+    </nav>
+    <h2>Lista de la compra</h2>
+    <ul type="circle">
+        <li>Pan</li>
+        <li>Queso</li>
+        <li>Leche</li>
+    </ul>
+    <h2>Orden de aprendizaje en el desarrollo web</h2>
+    <ol type="I" start="64">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <h2>Lenguajes para el desarrollo web</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language: leguaje de marcado que estructura datos en una página web.</dd>
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheets: es un lenguaje de diseño para dar estilos al HTML.</dd>
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programación para interactuar con un sitio web.</dd>
+    </dl>
+</body>
+</html>
